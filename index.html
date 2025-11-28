@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivir en Comunión - Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-bold text-gray-800 hover:text-yellow-700 transition">
+                        Vivir en Comunión
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium active">Inicio</a>
+                    <a href="persona.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Persona</a>
+                    <a href="comunion.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Comunión</a>
+                    <a href="servicio.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Servicio</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Inicio</a>
+                <a href="persona.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Persona</a>
+                <a href="comunion.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Comunión</a>
+                <a href="servicio.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Servicio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen mt-16">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=1200');">
+            <div class="hero-overlay absolute inset-0 flex items-center justify-center">
+                <div class="text-center text-white px-4 animate-fade-in">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">Vivir en Comunión</h1>
+                    <div class="section-divider mb-6"></div>
+                    <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+                        Buscamos profundizar en los valores de Persona, Comunión y Servicio, entendidos como pilares de una vida libre, fraterna y comprometida con el prójimo.
+                    </p>
+                    <button onclick="document.getElementById('valores').scrollIntoView({behavior: 'smooth'})" class="mt-8 bg-yellow-700 hover:bg-yellow-800 text-white font-semibold px-8 py-3 rounded-lg transition transform hover:scale-105">
+                        Descubre Más
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secciones de Valores -->
+    <section id="valores" class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Nuestros Pilares</h2>
+            <div class="section-divider mb-6"></div>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Tres valores fundamentales que guían nuestro camino hacia una vida plena y significativa
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Persona Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600');"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold text-yellow-800">Persona</h2>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        La persona es un ser libre y responsable, llamada a decidir con conciencia y amor, orientando su vida hacia el bien y la verdad.
+                    </p>
+                    <a href="persona.html" class="block w-full text-center bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-3 rounded-lg transition transform hover:scale-105">
+                        Explorar Persona
+                    </a>
+                </div>
+            </div>
+
+            <!-- Comunión Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600');"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold text-yellow-800">Comunión</h2>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        La comunión es el encuentro que une a las personas en el amor, construyendo fraternidad, solidaridad y un sentido profundo de comunidad.
+                    </p>
+                    <a href="comunion.html" class="block w-full text-center bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-3 rounded-lg transition transform hover:scale-105">
+                        Explorar Comunión
+                    </a>
+                </div>
+            </div>
+
+            <!-- Servicio Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600');"></div>
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-3xl font-bold text-yellow-800">Servicio</h2>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        El servicio es una forma de misericordia activa sin fronteras, una humildad activa, compasión universal y responsabilidad social.
+                    </p>
+                    <a href="servicio.html" class="block w-full text-center bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-3 rounded-lg transition transform hover:scale-105">
+                        Explorar Servicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Inspiracional -->
+    <section class="bg-gradient-to-r from-yellow-800 to-yellow-900 py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-4xl font-bold mb-6">Una Vida con Propósito</h2>
+            <div class="section-divider-white mb-8"></div>
+            <p class="text-xl leading-relaxed mb-8">
+                Cada acto de amor, cada gesto de solidaridad, cada momento de servicio, nos acerca a la plenitud humana. No estamos llamados a vivir en soledad, sino en comunión, construyendo juntos un mundo más fraterno y justo.
+            </p>
+            <a href="persona.html" class="inline-block bg-white text-yellow-800 hover:bg-gray-100 font-semibold px-8 py-3 rounded-lg transition transform hover:scale-105">
+                Comienza el Viaje
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Vivir en Comunión</h3>
+                    <p class="text-gray-300 mb-4">Proyecto final — Reflexión sobre Persona, Comunión y Servicio.</p>
+                    <p class="text-gray-400 text-sm">Profesor: Ricardo Salazar · Ramo: Persona, Comunión y Servicio</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Integrantes</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>Marcos Godoy</li>
+                        <li>Álvaro Sandoval</li>
+                        <li>Vicente Ortiz</li>
+                        <li>Martín Valdebenito</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

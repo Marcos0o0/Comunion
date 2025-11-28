@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona - Vivir en Comunión</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-bold text-gray-800 hover:text-yellow-700 transition">
+                        Vivir en Comunión
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Inicio</a>
+                    <a href="persona.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium active">Persona</a>
+                    <a href="comunion.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Comunión</a>
+                    <a href="servicio.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Servicio</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Inicio</a>
+                <a href="persona.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Persona</a>
+                <a href="comunion.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Comunión</a>
+                <a href="servicio.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Servicio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de Página -->
+    <section class="relative h-96 mt-16 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200');">
+        <div class="hero-overlay absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Persona</h1>
+                <div class="section-divider-white"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="max-w-5xl mx-auto px-4 py-16">
+        <a href="index.html" class="inline-flex items-center mb-8 text-yellow-700 hover:text-yellow-800 font-medium transition">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            Volver al inicio
+        </a>
+        
+        <div class="prose prose-lg max-w-none">
+            <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 mb-8">
+                <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                    Ser persona, según el Evangelio, es reconocerse como hijo de Dios, creado con libertad, dignidad y responsabilidad. No se trata solo de existir, sino de vivir con sentido, amando y eligiendo el bien. La persona es capaz de decidir, de crear y de amar, y en esa libertad encuentra su camino hacia Dios y hacia los demás. Para comprenderlo mejor, veremos tres relatos del Evangelio que muestran distintos aspectos de lo que significa ser verdaderamente persona.
+                </p>
+
+                <!-- Estadísticas visuales -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
+                    <div class="text-center p-6 bg-yellow-50 rounded-lg">
+                        <div class="text-4xl font-bold text-yellow-800 mb-2">Libertad</div>
+                        <p class="text-gray-700">Capacidad de elegir</p>
+                    </div>
+                    <div class="text-center p-6 bg-yellow-50 rounded-lg">
+                        <div class="text-4xl font-bold text-yellow-800 mb-2">Dignidad</div>
+                        <p class="text-gray-700">Valor irrepetible</p>
+                    </div>
+                    <div class="text-center p-6 bg-yellow-50 rounded-lg">
+                        <div class="text-4xl font-bold text-yellow-800 mb-2">Amor</div>
+                        <p class="text-gray-700">Capacidad de entrega</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Relatos Bíblicos -->
+            <div class="space-y-8">
+                <div class="biblical-quote bg-white rounded-lg shadow-lg p-8">
+                    <div class="flex items-start mb-4">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <svg class="w-6 h-6 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-semibold text-yellow-800 mb-3">Reflexión personal sobre La Sociedad de los Poetas Muertos</h3>
+                            <p class="text-gray-600 text-sm mb-4">Taller de análisis de película</p>
+                        </div>
+                    </div>
+                    <!-- <p class="italic text-gray-700 mb-4 pl-16">"Dios creó al hombre a su imagen; a imagen de Dios lo creó."</p> -->
+                    <p class="text-gray-800 pl-16">
+                        Como grupo analizamos cómo la película muestra el ejercicio de la libertad y sus tensiones. Observamos que los personajes, especialmente los estudiantes y el profesor Keating, usan su libertad para cuestionar normas rígidas y buscar espacios donde puedan expresarse auténticamente, como la reactivación de la Sociedad de los Poetas Muertos o la decisión de Neil de actuar pese a la prohibición de su padre.
+                        <br>
+                        <br>
+                        Identificamos también escenas donde se enfrenta la obediencia con la transgresión, mostrando que la libertad implica responsabilidad y diálogo, y que actuar por impulso sin integrar las consecuencias puede llevar a conflictos profundos.
+                        <br>
+                        <br>
+                        Finalmente, contrastamos el mensaje del Catecismo sobre la verdadera libertad entendida como elección del bien con el acto final de los estudiantes, quienes defienden la dignidad del profesor Keating a pesar de la presión externa. Este gesto revela una libertad interior orientada a la justicia, más allá de la simple rebeldía.
+                    </p>
+                </div>
+
+                
+            </div>
+
+            <!-- Conclusión -->
+            <div class="bg-gradient-to-r from-yellow-700 to-yellow-800 rounded-lg shadow-lg p-8 md:p-12 mt-12 text-white">
+                <h3 class="text-3xl font-bold mb-6">Reflexión Final</h3>
+                <p class="text-lg leading-relaxed mb-6">
+                    Esta película nos recuerda que la libertad no consiste solo en desafiar reglas, sino en descubrir quiénes somos y qué valores queremos sostener incluso cuando cuesta. El coraje de los personajes invita a pensar cómo, en nuestra propia vida, también estamos llamados a ejercer una libertad madura: una que construya, que dialogue y que busque el bien sin perder autenticidad.
+            </div>
+
+            <!-- Navegación a siguiente sección -->
+            <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-300">
+                <a href="index.html" class="text-yellow-700 hover:text-yellow-800 font-medium flex items-center transition">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    Volver al Inicio
+                </a>
+                <a href="comunion.html" class="text-yellow-700 hover:text-yellow-800 font-medium flex items-center transition">
+                    Siguiente: Comunión
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Vivir en Comunión</h3>
+                    <p class="text-gray-300 mb-4">Proyecto final — Reflexión sobre Persona, Comunión y Servicio.</p>
+                    <p class="text-gray-400 text-sm">Profesor: Ricardo Salazar · Ramo: Persona, Comunión y Servicio</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Integrantes</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>Marcos Godoy</li>
+                        <li>Álvaro Sandoval</li>
+                        <li>Vicente Ortiz</li>
+                        <li>Martín Valdebenito</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

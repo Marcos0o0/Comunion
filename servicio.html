@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio - Vivir en Comunión</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-xl font-bold text-gray-800 hover:text-yellow-700 transition">
+                        Vivir en Comunión
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Inicio</a>
+                    <a href="persona.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Persona</a>
+                    <a href="comunion.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium">Comunión</a>
+                    <a href="servicio.html" class="nav-link text-gray-700 hover:text-yellow-700 font-medium active">Servicio</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Inicio</a>
+                <a href="persona.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Persona</a>
+                <a href="comunion.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Comunión</a>
+                <a href="servicio.html" class="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded">Servicio</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de Página -->
+    <section class="relative h-96 mt-16 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200');">
+        <div class="hero-overlay absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Servicio</h1>
+                <div class="section-divider-white"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <div class="max-w-5xl mx-auto px-4 py-16">
+        <a href="index.html" class="inline-flex items-center mb-8 text-yellow-700 hover:text-yellow-800 font-medium transition">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            Volver al inicio
+        </a>
+        
+        <div class="prose prose-lg max-w-none">
+            <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 mb-8">
+                <p class="text-xl text-gray-700 leading-relaxed mb-8">
+                    El servicio es poner nuestros dones al servicio de los demás, especialmente de quienes más lo necesitan. No es una obligación impuesta, sino una respuesta libre y generosa al llamado del amor. En el servicio descubrimos que nos realizamos cuando nos entregamos.
+                </p>
+
+                <!-- Estadísticas visuales -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
+                    <div class="text-center p-6 bg-yellow-50 rounded-lg">
+                        <div class="text-4xl font-bold text-yellow-800 mb-2">Compasión</div>
+                        <p class="text-gray-700">Actuar con el corazón</p>
+                    </div>
+                    <div class="text-center p-6 bg-yellow-50 rounded-lg">
+                        <div class="text-4xl font-bold text-yellow-800 mb-2">Solidaridad</div>
+                        <p class="text-gray-700">Construir puentes</p>
+                    </div>
+                    <div class="text-center p-6 bg-yellow-50 rounded-lg">
+                        <div class="text-4xl font-bold text-yellow-800 mb-2">Acción</div>
+                        <p class="text-gray-700">Hechos concretos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parábola del Buen Samaritano -->
+            <div class="biblical-quote bg-white rounded-lg shadow-lg p-8 mb-8">
+                <div class="flex items-start mb-4">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                        <svg class="w-6 h-6 text-yellow-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-semibold text-yellow-800 mb-3">La Parábola del Buen Samaritano</h3>
+                        <p class="text-gray-600 text-sm mb-4">Lucas 10:25-37</p>
+                    </div>
+                </div>
+                
+                <p class="text-gray-800 pl-16 mb-6">
+                    Un hombre fue asaltado en el camino de Jerusalén a Jericó. Un sacerdote y un levita pasaron de largo, pero un samaritano —considerado enemigo— se detuvo, curó sus heridas, lo llevó a un mesón y pagó sus gastos.
+                </p>
+
+                <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-600 ml-16">
+                    <p class="text-gray-800 font-semibold mb-2">
+                        "¿Quién fue el prójimo del que cayó en manos de los ladrones?"
+                    </p>
+                    <p class="text-gray-700 mb-3">
+                        "El que usó de misericordia con él."
+                    </p>
+                    <p class="text-yellow-800 font-bold text-xl">
+                        "Ve, y haz tú lo mismo."
+                    </p>
+                </div>
+
+                <p class="text-gray-800 pl-16 mt-6">
+                    Este relato nos enseña que servir es actuar con compasión genuina, superando prejuicios y diferencias. Mientras otros actuaron con indiferencia, el samaritano mostró que el verdadero servicio se demuestra con hechos concretos, sin esperar nada a cambio.
+                </p>
+            </div>
+
+            <!-- Desafíos del Servicio Hoy -->
+            <div class="bg-white rounded-lg shadow-lg p-8 md:p-12 mb-8">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">Desafíos del Servicio Hoy</h3>
+                <p class="text-gray-700 mb-6">
+                    El mensaje de Jesús sigue vigente. Nos invita a ser buenos samaritanos en nuestro entorno:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start p-4 bg-yellow-50 rounded-lg">
+                        <svg class="w-6 h-6 text-yellow-700 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Vencer la indiferencia</h4>
+                            <p class="text-gray-700 text-sm">No pasar de largo ante el sufrimiento ajeno</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start p-4 bg-yellow-50 rounded-lg">
+                        <svg class="w-6 h-6 text-yellow-700 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Romper prejuicios</h4>
+                            <p class="text-gray-700 text-sm">Servir más allá de diferencias sociales o culturales</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start p-4 bg-yellow-50 rounded-lg">
+                        <svg class="w-6 h-6 text-yellow-700 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Actuar con compasión</h4>
+                            <p class="text-gray-700 text-sm">Demostrar amor con hechos concretos y tangibles</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start p-4 bg-yellow-50 rounded-lg">
+                        <svg class="w-6 h-6 text-yellow-700 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-1">Promover solidaridad</h4>
+                            <p class="text-gray-700 text-sm">Construir puentes y compartir recursos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conclusión -->
+            <div class="bg-gradient-to-r from-yellow-700 to-yellow-800 rounded-lg shadow-lg p-8 md:p-12 mt-12 text-white">
+                <h3 class="text-3xl font-bold mb-6">Reflexión Final</h3>
+                <p class="text-lg leading-relaxed mb-6">
+                    El servicio nos humaniza y nos conecta con lo mejor de nuestra naturaleza. No esperemos tener todo resuelto para comenzar: el servicio comienza con pequeños gestos cotidianos, con una sonrisa, con una palabra de aliento, con nuestra presencia atenta.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    En el servicio, Persona y Comunión se encuentran. Somos personas cuando elegimos libremente el bien del otro, y construimos comunión cuando servimos juntos por un mundo más justo y fraterno.
+                </p>
+            </div>
+
+            <!-- Navegación -->
+            <div class="flex justify-between items-center mt-12 pt-8 border-t border-gray-300">
+                <a href="comunion.html" class="text-yellow-700 hover:text-yellow-800 font-medium flex items-center transition">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    Anterior: Comunión
+                </a>
+                <a href="index.html" class="text-yellow-700 hover:text-yellow-800 font-medium flex items-center transition">
+                    Volver al Inicio
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Vivir en Comunión</h3>
+                    <p class="text-gray-300 mb-4">Proyecto final — Reflexión sobre Persona, Comunión y Servicio.</p>
+                    <p class="text-gray-400 text-sm">Profesor: Ricardo Salazar · Ramo: Persona, Comunión y Servicio</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Integrantes</h4>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>Marcos Godoy</li>
+                        <li>Álvaro Sandoval</li>
+                        <li>Vicente Ortiz</li>
+                        <li>Martín Valdebenito</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
